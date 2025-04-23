@@ -1,0 +1,131 @@
+
+.event-wrapper {
+  margin: 0; /* Remove default 10px margin */
+  height: 350px;
+  width: 450px; /* 270 */
+  z-index: 10;
+  cursor: pointer;
+}
+  
+  
+.event-card 
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: black;
+}
+  
+.event-image-box 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+  
+.event-image-box.hovered 
+{
+    transform: translateY(-40%);
+}
+  
+  
+.event-image
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+  
+.event-genre 
+{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 3;
+}
+  
+.event-info-reveal 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: black;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+}
+  
+.event-title 
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+.event-info-reveal p 
+{
+    font-size: 14px;
+    color: white;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+  
+/* Media Queries for Responsiveness */
+@media (max-width: 850px) {
+    .event-wrapper {
+      max-width: 160px;
+      max-height: 220px;
+    }
+  
+    .event-title {
+      font-size: 0.9rem;
+    }
+  
+    .event-info-reveal p {
+      font-size: 0.8rem;
+    }
+  
+    .event-genre {
+      font-size: 11px;
+      padding: 2px 6px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-wrapper {
+      max-width: 140px;
+      max-height: 190px;
+    }
+  
+    .event-title {
+      font-size: 0.8rem;
+    }
+  
+    .event-info-reveal p {
+      font-size: 0.75rem;
+    }
+  
+    .event-genre {
+      font-size: 10px;
+    }
+  }

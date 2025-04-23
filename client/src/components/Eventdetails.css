@@ -1,0 +1,296 @@
+/* Base styles */
+.edp-container {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -26px;
+}
+
+.edp-loading {
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Hero section */
+.edp-hero {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.edp-back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 20;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.2s;
+}
+
+.edp-back-btn:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.edp-hero-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.edp-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+/* Main content */
+.edp-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.edp-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.edp-meta-genre {
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  background-color: rgba(0, 119, 255, 0.2);
+  color: #0077ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(0, 119, 255, 0.3);
+}
+
+.edp-meta-location {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.edp-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.edp-description {
+  color: #aaa;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Info grid */
+.edp-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.edp-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.edp-info-icon {
+  font-size: 1.5rem;
+  color: #e50914;
+}
+
+.edp-info-label {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.edp-info-value {
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Ticket card */
+.edp-ticket-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #111; */
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid #222;
+}
+
+.edp-ticket-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.edp-ticket-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.edp-ticket-subtext {
+  color: #aaa;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* .edp-ticket-booked{
+  margin-bottom: 10px;
+} */
+
+.edp-ticket-booked p{
+  font-size: 0.8rem;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.edp-ticket-book-btn,
+.edp-ticket-booked-btn{
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.edp-ticket-book-btn {
+  background-color: #e50914;
+  color: white;
+}
+
+.edp-ticket-book-btn:hover {
+  background-color: #f40612;
+}
+
+.edp-ticket-book-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.edp-ticket-booked-btn {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.edp-ticket-booked-btn:hover {
+  background-color: #3d8b40;
+}
+
+/* Ticket status styles */
+.edp-ticket-used p,
+.edp-ticket-expired p {
+  font-size: 0.8rem;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.edp-ticket-used-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #666;
+  color: white;
+  cursor: not-allowed;
+}
+
+.edp-ticket-expired-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #333;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.edp-ticket-note {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+}
+
+/* Location section */
+.edp-location {
+  margin-bottom: 2rem;
+}
+
+.edp-location-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.edp-map-placeholder {
+  height: 300px;
+  background-color: #222;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  border: 1px solid #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .edp-content {
+    padding: 1.5rem;
+  }
+  
+  .edp-title {
+    font-size: 2rem;
+  }
+  
+  .edp-ticket-price {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,166 @@
+/* Mytickets.css */
+
+.tickets-container {
+    padding: 40px;
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+  
+.tickets-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+  
+.no-tickets-text {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+  
+.ticket-card {
+    display: flex;
+    background-color: black;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+    height: 280px;
+}
+  
+.ticket-card:hover {
+    transform: translateY(-5px);
+}
+
+.ticket-image-box {
+    position: relative;
+    width: 380px; /* 🔧 fixed width for the image */
+    height: 100%;
+    flex-shrink: 0;
+}  
+  
+.ticket-status {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ff0000;
+    color: white;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 3;
+}
+
+.ticket-status.valid {
+    background-color: green;
+}
+
+.ticket-status.used {
+    background-color: grey;
+}
+  
+.ticket-status.expired {
+    background-color: #ff0000;
+}
+  
+.ticket-image {
+    width: 380px;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.ticket-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    min-width: 0; /* ✅ ensures flex content doesn't overflow */
+}   
+
+.ticket-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-pd p{
+    color: #ccc;
+}
+  
+.ticket-event-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.4;
+    padding-bottom: 15px;
+    margin-bottom: 2px;
+    text-align: left;
+}  
+
+.ticket-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 👈 Adjust the space here */
+}  
+  
+.ticket-info p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: 5px 0;
+    gap: 10px;
+    color: #ccc;
+    white-space: normal;     /* ✅ allow wrapping */
+    word-break: break-word;  /* ✅ break long location strings */
+}  
+  
+.ticket-meta {
+    /* display: flex;
+    justify-content: space-between; */
+    margin-top: 12px;
+    font-size: 1rem;
+    /* color: #ccc; */
+}
+  
+.ticket-meta p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+  
+.ticket-meta div strong {
+    font-size: 1.1rem;
+    color: white;
+}
+  
+.ticket-footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-btn {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.view-details-button {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+  
+.view-details-button:hover {
+    background-color: #c20811;
+}
+  

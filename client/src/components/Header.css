@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; 
+  background-color: black; 
+  color: white;
+  font-family: 'Poppins', sans-serif; 
+  /* border: solid white 2px; */
+}
+
+.logo a {
+  font-size: 2rem;       
+  font-weight: 800;        
+  color: #ffffff;          
+  text-decoration: none;   
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  color: #ffffff;
+  font-weight: 400; 
+  text-decoration: none; 
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 6px 12px; 
+}
+
+.link:hover {
+  color: white; 
+  background-color: rgba(227, 242, 253, 0.3); 
+}
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e3f2fd; 
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%; 
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #ffffff;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+/* Select */
+.city-select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.city-select {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease;
+
+    /* Custom Arrow */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 16px;
+    padding-right: 30px;
+}
+
+/* Remove default arrow in some browsers */
+.city-select::-ms-expand {
+    display: none;
+}
+
+/* Create the animated underline effect */
+.city-select-wrapper::after 
+{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.city-select-wrapper:hover 
+{
+    color: white; 
+    background-color: rgba(227, 242, 253, 0.3); 
+}
+
+.city-select-wrapper:hover::after {
+    width: 100%;
+}
+/* Select */
+
+.header-logo
+{
+    display: flex;
+    gap: 20px;
+}
+@media (max-width: 680px) {
+  .links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

@@ -1,0 +1,132 @@
+.viewers-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: black;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+}
+
+.viewers-container .slick-slide > div {
+    width: 100%;
+  }
+    
+  
+.viewers-header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+  
+.viewers-header h2 
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+  
+.view-all 
+{
+    font-size: 14px;
+    color: #bbb;
+    text-decoration: none;
+}
+  
+.view-all:hover 
+{
+    color: #fff;
+}
+  
+
+.viewers-wrap {
+    padding: 0; /* Change from 10px to 0 */
+    margin: 0;
+    text-align: center;
+  }
+  
+.viewers-container .slick-slide {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center;
+  }
+    
+  
+  
+
+/* .viewers-wrap img 
+{
+    height: 300px;
+    width: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    margin: 0 auto;
+} */
+  
+/* .viewers-wrap:hover img 
+{
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+} */
+  
+/* Ensure the arrows are visible and styled */
+.viewers-container .slick-prev,.viewers-container .slick-next 
+{
+  z-index: 10 !important;  /* 🔥 Ensure arrows stay visible */
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+
+.viewers-container .slick-prev:before,.viewers-container .slick-next:before 
+{
+  font-size: 30px;
+  color: white; /* Make arrows visible */
+}
+
+/* Optional: move arrows slightly away from image area */
+.viewers-container .slick-prev {
+  left: -45px;
+}
+
+.viewers-container .slick-next 
+{
+  right: -45px;
+}
+
+.custom-arrow 
+{
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-size: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+  
+.custom-arrow.next 
+{
+    right: -25px;
+}
+  
+.custom-arrow.prev 
+{
+    left: -25px;
+}
+  
+.viewers-slider-wrapper p 
+{
+    text-align: center;
+    color: white;
+    margin-top: 6rem;
+    font-size: 16px;
+}

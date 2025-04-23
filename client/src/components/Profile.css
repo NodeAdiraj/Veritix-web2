@@ -1,0 +1,106 @@
+.profile-wrapper {
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-right: 20px;
+}
+
+.profile-name-email h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profile-name-email p {
+  color: #aaa;
+  margin: 5px 0 0 0;
+}
+
+.profile-info-box {
+  /* background-color: #111; */
+  border: 2px #151515 solid;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  max-width: 800px; /* increase from something smaller like 600px */
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.profile-info-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.profile-subtitle {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.profile-details label {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 15px;
+  display: block;
+}
+
+.profile-details p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: white;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-actions button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.profile-actions button:hover {
+  opacity: 0.9;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.profile-actions button:first-of-type {
+  border: 2px #151515 solid;
+  background-color: black;
+  color: white;
+}
